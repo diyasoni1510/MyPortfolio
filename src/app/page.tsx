@@ -12,13 +12,10 @@ import MyProjects from "./Components/myProjects";
 import Experience from "./Components/experience";
 import Contact from "./Components/contact";
 
-
-
 const Homepage = () => {
   return (
     <>
       <div className="h-screen w-screen bg-gradient-to-t from-gray-500 to-gray-800 text-red-50 overflow-scroll p-5">
-        
         <header className="flex justify-between text-white">
           <h1 className="font-bold">DIVYANJALI SONI</h1>
           <div className="flex gap-2 text-xl">
@@ -71,9 +68,9 @@ const Homepage = () => {
         <Divider />
         <MyProjects />
         <Divider />
-        <Experience/>
+        <Experience />
         <Divider />
-        <Contact/>
+        <Contact />
       </div>
     </>
   );
