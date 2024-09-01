@@ -2,7 +2,7 @@
 import { CiLinkedin } from "react-icons/ci";
 import { VscGithub } from "react-icons/vsc";
 import { FaInstagram } from "react-icons/fa";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import About from "./Components/about";
@@ -19,8 +19,9 @@ import { SiInstagram } from "react-icons/si";
 const Homepage = () => {
   return (
     <>
-      <div className="h-screen w-screen bg-gradient-to-t from-gray-500 to-gray-800 text-red-50 overflow-scroll p-5">
-        {/* <header className="flex justify-between text-white">
+      <div className="container px-5 lg:px-20">
+        <div className="h-screen w-screen bg-gradient-to-t from-gray-500 to-gray-800 text-red-50 overflow-scroll p-5">
+          {/* <header className="flex justify-between text-white">
           <h1 className="font-bold">DIVYANJALI SONI</h1>
           <div className="flex gap-2 text-xl">
             <CiLinkedin />
@@ -65,31 +66,32 @@ const Homepage = () => {
             </div>
           </div>
         </motion.div> */}
-        <div className="h-screen flex flex-col justify-center items-center gap-4">
-          <h1 className="text-8xl text-center">Divyanjali Soni</h1>
-          <h3 className="text-4xl">FRONTEND DEVELOPER</h3>
-          <div className="contacts flex gap-5">
-            <div className="bg-black rounded-full p-2">
-              <TiSocialLinkedin className="text-3xl" />
-            </div>
-            <div className="bg-black rounded-full p-2">
-              <FaGithub className="text-3xl" />
-            </div>
-            {/* <div className="bg-black rounded-full p-2">
+          <div className="h-screen flex flex-col justify-center items-center gap-4">
+            <h1 className="text-8xl text-center">Divyanjali Soni</h1>
+            <h3 className="text-4xl">FRONTEND DEVELOPER</h3>
+            <div className="contacts flex gap-5">
+              <div className="bg-black rounded-full p-2">
+                <TiSocialLinkedin className="text-3xl" />
+              </div>
+              <div className="bg-black rounded-full p-2">
+                <FaGithub className="text-3xl" />
+              </div>
+              {/* <div className="bg-black rounded-full p-2">
               <SiInstagram className="text-3xl" />
             </div> */}
+            </div>
           </div>
+          <Divider />
+          <About />
+          <Divider />
+          <Skills />
+          <Divider />
+          <MyProjects />
+          <Divider />
+          <Experience />
+          <Divider />
+          <Contact />
         </div>
-        <Divider />
-        <About />
-        <Divider />
-        <Skills />
-        <Divider />
-        <MyProjects />
-        <Divider />
-        <Experience />
-        <Divider />
-        <Contact />
       </div>
     </>
   );
