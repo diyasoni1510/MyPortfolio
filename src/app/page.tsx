@@ -11,12 +11,16 @@ import Skills from "./Components/skills";
 import MyProjects from "./Components/myProjects";
 import Experience from "./Components/experience";
 import Contact from "./Components/contact";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { FaGithub } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { SiInstagram } from "react-icons/si";
 
 const Homepage = () => {
   return (
     <>
       <div className="h-screen w-screen bg-gradient-to-t from-gray-500 to-gray-800 text-red-50 overflow-scroll p-5">
-        <header className="flex justify-between text-white">
+        {/* <header className="flex justify-between text-white">
           <h1 className="font-bold">DIVYANJALI SONI</h1>
           <div className="flex gap-2 text-xl">
             <CiLinkedin />
@@ -33,7 +37,7 @@ const Homepage = () => {
           <div className="h-full flex flex-col items-center md:flex-row ">
             <div className="h-1/2 w-full md:h-full md:w-1/2 relative ">
               <Image
-                src="/hero.png"
+                src="/my-pic.png"
                 fill
                 className="object-contain"
                 alt="hero"
@@ -60,7 +64,22 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
+        <div className="h-screen flex flex-col justify-center items-center gap-4">
+          <h1 className="text-8xl text-center">Divyanjali Soni</h1>
+          <h3 className="text-4xl">FRONTEND DEVELOPER</h3>
+          <div className="contacts flex gap-5">
+            <div className="bg-black rounded-full p-2">
+              <TiSocialLinkedin className="text-3xl" />
+            </div>
+            <div className="bg-black rounded-full p-2">
+              <FaGithub className="text-3xl" />
+            </div>
+            {/* <div className="bg-black rounded-full p-2">
+              <SiInstagram className="text-3xl" />
+            </div> */}
+          </div>
+        </div>
         <Divider />
         <About />
         <Divider />

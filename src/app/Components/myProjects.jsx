@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { VscGithub } from "react-icons/vsc";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 const projectInfo = [
   {
@@ -26,27 +26,38 @@ const projectInfo = [
 
 const myProjects = () => {
   return (
-    <motion.div className="py-8 flex flex-col gap-4 justify-center items-center" initial={{y:200}} whileInView={{y:0}} transition={{duration:1}} viewport={{ once: true }}>
+    <div>
       <h1 className="text-2xl text-center ">MY PROJECTS</h1>
-      <div className="flex flex-col gap-3 justify-center items-center">
+      <div className="grid grid-cols-3 gap-3 justify-center items-center">
         {projectInfo.map((project, index) => {
           return (
-            <div key={index}  className="w-5/6 flex gap-2 flex-col justify-center items-center bg-gradient-to-t from-white to-gray-700 text-black p-4 ">
+            <div
+              key={index}
+              className="col-span-1 flex gap-2 flex-col justify-center items-center bg-gradient-to-t from-white to-gray-700 text-black p-4 "
+            >
               <div className="relative ">
                 <img src={project.image} alt="" className="blur-[2px]" />
                 <div className="absolute top-0 flex justify-center items-center w-full h-full ">
-                  <p className="bg-gray-800 bg-opacity-50 p-2 text-white font-semibold">{project.name}</p>
+                  <p className="bg-gray-800 bg-opacity-50 p-2 text-white font-semibold">
+                    {project.name}
+                  </p>
                 </div>
               </div>
-              <div className="flex text-sm flex-col gap-2" >
+              <div className="flex text-sm flex-col gap-2">
                 <p>{project.desc}</p>
-                <Link href={project.codeLink} className="bg-black text-white w-full  text-center rounded py-1 flex gap-2 justify-center items-center"><VscGithub/>Go To Code</Link>
+                <Link
+                  href={project.codeLink}
+                  className="bg-black text-white w-full  text-center rounded py-1 flex gap-2 justify-center items-center"
+                >
+                  <VscGithub />
+                  Go To Code
+                </Link>
               </div>
             </div>
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 };
 
