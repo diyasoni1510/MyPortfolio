@@ -29,7 +29,7 @@ const Homepage = () => {
             <FaInstagram />
           </div>
         </header>
-        <motion.div
+        <div
           className="h-full"
           initial={{ y: "200vh" }}
           animate={{ y: "0%" }}
@@ -65,7 +65,7 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-        </motion.div> */}
+        </div> */}
           <div className="h-screen flex flex-col justify-center items-center gap-4">
             <h1 className="text-8xl text-center">Divyanjali Soni</h1>
             <h3 className="text-4xl">FRONTEND DEVELOPER</h3>

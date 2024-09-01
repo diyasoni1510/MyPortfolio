@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { VscGithub } from "react-icons/vsc";
-import { motion } from "framer-motion";
 
 const projectInfo = [
   {

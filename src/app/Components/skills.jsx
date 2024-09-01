@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import {motion} from "framer-motion"
 
 const skillsImages = [
   {
@@ -43,7 +42,13 @@ const skillsImages = [
 
 const skills = () => {
   return (
-    <motion.div className="py-8 flex flex-col gap-4" initial={{y:200}} whileInView={{y:0}} transition={{duration:1}} viewport={{ once: true }}>
+    <div
+      className="py-8 flex flex-col gap-4"
+      initial={{ y: 200 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+    >
       <h1 className="text-2xl text-center ">SKILLS</h1>
       <div className="flex flex-wrap justify-around items-center gap-2 pt-2">
         {skillsImages.map(({ image, name }) => {
@@ -67,29 +72,28 @@ const skills = () => {
             //     <p className="bg-black w-fit text-xs rounded p-1">{name}</p>
             //   </div>
             // </div>
-              <div
-                className="w-20 h-20 bg-gray-700 rounded-lg flex flex-col gap-2 justify-center items-center "
-                key={name}
-              >
-                <div className="w-1/3 h-1/3 relative">
-                  <Image
-                    src={image}
-                    alt=""
-                    fill
-                    objectFit="contain"
-                    className="w-5/6"
-                  />
-                </div>
-                <p className="text-white text-xs">{name}</p>
-
+            <div
+              className="w-20 h-20 bg-gray-700 rounded-lg flex flex-col gap-2 justify-center items-center "
+              key={name}
+            >
+              <div className="w-1/3 h-1/3 relative">
+                <Image
+                  src={image}
+                  alt=""
+                  fill
+                  objectFit="contain"
+                  className="w-5/6"
+                />
               </div>
+              <p className="text-white text-xs">{name}</p>
+            </div>
           );
         })}
         {/* <div className='w-20 h-20 bg-gray-800 opacity-30 rounded-lg'>
                 <Image src="/github.png" alt="" width={50} height={50}/>
             </div> */}
       </div>
-    </motion.div>
+    </div>
   );
 };
 

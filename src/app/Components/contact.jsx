@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 const text = "Hello!";
@@ -35,7 +34,7 @@ const Contact = () => {
       );
   };
   return (
-    <motion.div
+    <div
       className="h-full py-8"
       initial={{ y: 200 }}
       whileInView={{ y: 0 }}
@@ -48,7 +47,7 @@ const Contact = () => {
         <div className="h-1/2 lg:h-full lg:w-1/2 flex justify-center items-center text-4xl md:text-6xl">
           {text.split("").map((letter, index) => {
             return (
-              <motion.span
+              <span
                 className=""
                 key={index}
                 initial={{ opacity: 1 }}
@@ -60,17 +59,17 @@ const Contact = () => {
                 }}
               >
                 {letter}
-              </motion.span>
+              </span>
             );
           })}
-          <motion.div
+          <div
             initial={{ rotate: -5, opacity: 0.5 }}
             animate={{ rotate: 5, opacity: 1 }}
             transition={{ duration: 3, repeat: 1 }}
             className=" w-fit"
           >
             {/* <MdBackHand className="text-yellow-500 " /> */}
-          </motion.div>
+          </div>
         </div>
         {/* form container  */}
         <form
@@ -126,7 +125,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
