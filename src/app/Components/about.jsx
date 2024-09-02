@@ -2,28 +2,36 @@ import React from "react";
 
 const about = () => {
   return (
-    <div
-      initial={{ y: 200 }}
-      whileInView={{ y: 0 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
-      className="py-8 flex flex-col gap-4"
+    <div className="w-full py-20 flex flex-col gap-4 text-white px-5 md:px-20 bg-no-repeat bg-cover bg-center bg-gradient-to-b from-gray-800 to-gray-600 " 
     >
       <h1 className="text-2xl text-center ">ABOUT</h1>
-      <div className="text-sm text-center">
+      <div className="text-xl leading-8 text-justify  w-2/3 mx-auto">
         <p>
-          Experienced web developer in my 6th semester of BCA, with a year of
-          professional experience across two companies. Passionate about
-          creating innovative and user-friendly websites. Eager to contribute my
-          skills and learn more in the ever-evolving field of web development.
+          Hi, I’m Divyanjali Soni, a Frontend Developer based in Lucknow with
+          almost a year of experience in web development. My expertise focuses
+          on crafting dynamic and user-friendly web applications using React and
+          Laravel.
         </p>
         <p>
-          Dedicated web developer crafting digital experiences, blending
-          creativity and code to bring ideas to life.
+          In my role, I build engaging user interfaces with React, leveraging
+          its component-based architecture to create seamless and interactive
+          experiences. On the backend, I utilize Laravel to develop robust
+          applications with secure authentication and efficient data management.
+        </p>
+
+        <p>
+          I am passionate about merging creativity with technology to solve
+          problems and deliver high-quality results. Outside of coding, I enjoy
+          reading books and indulging in music.
+        </p>
+
+        <p>
+          Feel free to connect with me if you’re interested in collaboration or
+          just want to discuss the latest in web development!
         </p>
       </div>
       <div className="flex flex-col items-end">
-        <p>SIGNATURE</p>
+        <p>Divyanjali Soni</p>
         <img src=""></img>
       </div>
     </div>

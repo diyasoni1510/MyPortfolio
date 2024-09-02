@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithub } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
+import { IoDocumentText } from "react-icons/io5";
 
 const FallingStarsWithLightTrail = () => {
   const canvasRef = useRef(null);
@@ -19,17 +21,19 @@ const FallingStarsWithLightTrail = () => {
     // Typewriter effect logic
     let index = 0;
 
-    const type = () => {
-        console.log(fullText.length)
-      if (index < fullText.length) {
-        setTypedText((prev) => prev + fullText[index]);
-        index++;
-        setTimeout(type, 150); // Adjust speed by changing timeout duration
-      }
-    };
+    const typingInterval = setInterval(() => {
+      setTypedText((prevText) => {
+        if (index <= fullText.length) {
+          index++;
+          return fullText.slice(0, index); // Append character by character
+        } else {
+          clearInterval(typingInterval); // Stop the interval when typing is done
+          return prevText;
+        }
+      });
+    }, 250);
 
     // Start typing after a slight delay
-    setTimeout(type, 500);
 
     function Star() {
       this.x = width + Math.random() * width;
@@ -95,31 +99,32 @@ const FallingStarsWithLightTrail = () => {
 
     return () => {
       window.removeEventListener("resize", handleResize);
+      clearInterval(typingInterval);
     };
-  }, []);
+  }, [fullText]);
 
   return (
-    <div className="relative h-screen w-screen">
-      {/* Canvas for falling stars */}
+    <div className="relative w-full h-[95vh]">
       <canvas
         ref={canvasRef}
         className="absolute inset-0"
-        style={{ backgroundColor: "#1f2937" }} // Dark gray background
+        style={{ backgroundColor: "#1f2937",width:'100%' }} // Dark gray background
       ></canvas>
-
-      {/* Overlay with text and social icons */}
-      <div className="absolute inset-0 flex flex-col justify-center items-center gap-4 z-10">
+      <div className="absolute w-full h-full top-0 flex flex-col justify-center items-center gap-10 z-10">
         <h1 className="text-8xl text-center text-white">Divyanjali Soni</h1>
-
-        {/* Typewriter effect for the job title */}
         <h3 className="text-4xl text-white">{typedText}</h3>
-
         <div className="contacts flex gap-5">
-          <div className="bg-black rounded-full p-2">
-            <TiSocialLinkedin className="text-3xl text-white" />
+          <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
+            <a href="#"><TiSocialLinkedin className="text-3xl text-white" /></a>
           </div>
-          <div className="bg-black rounded-full p-2">
-            <FaGithub className="text-3xl text-white" />
+          <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
+           <a href="#"> <FaGithub className="text-3xl text-white" /></a>
+          </div>
+          <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
+            <a href="#"><BiLogoGmail className="text-3xl text-white" /></a>
+          </div>
+          <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
+            <a href="#"><IoDocumentText className="text-3xl text-white" /></a>
           </div>
         </div>
       </div>

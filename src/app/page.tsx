@@ -21,20 +21,18 @@ import { SiInstagram } from "react-icons/si";
 const Homepage = () => {
   return (
     <>
-      {/* <FallingStars/>
-    <FallingStarsWithLight/> */}
-      <FallingStarsWithLightTrail />
-      
-          {/* <Divider />
-          <About />
-          <Divider />
-          <Skills />
-          <Divider />
-          <MyProjects />
-          <Divider />
-          <Experience />
-          <Divider />
+      <div className="bg-gray-800">
+        <FallingStarsWithLightTrail />
+        <About />
+        {/* <Divider /> */}
+        <Experience />
+        <Divider />
+        <Skills/>
+        <Divider />
+        <MyProjects />
+        {/*<Divider />
           <Contact /> */}
+      </div>
     </>
   );
 };
