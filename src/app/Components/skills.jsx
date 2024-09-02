@@ -62,11 +62,15 @@ const skillsImages = [
     image: "/vs-code2.png",
     name: "VS Code",
   },
+  {
+    image: "/nodejs.png",
+    name: "Node js",
+  },
 ];
 
 const skills = () => {
   return (
-    <div className="w-full py-10 flex flex-col gap-4 text-white px-5 md:px-20 justify-center items-center"
+    <div className="w-full py-10 md:py-20 flex flex-col gap-4 text-white px-5 md:px-20 justify-center items-center"
     >
       <h1 className="text-2xl text-center text-white mb-10">TECH STACK</h1>
       <div className="grid grid-cols-5 justify-center items-center gap-5 md:gap-0 md:w-2/3">

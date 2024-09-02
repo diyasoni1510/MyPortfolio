@@ -32,7 +32,6 @@ const FallingStarsWithLightTrail = () => {
         }
       });
     }, 250);
-
     // Start typing after a slight delay
 
     function Star() {

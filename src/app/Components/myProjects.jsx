@@ -31,7 +31,7 @@ const projectInfo = [
 
 const myProjects = () => {
   return (
-    <div className="w-full py-10 flex flex-col gap-4 text-white px-5 md:px-20 bg-cover bg-bottom bg-no-repeat"
+    <div className="w-full py-10 md:py-20 flex flex-col gap-4 text-white px-5 md:px-20 bg-cover bg-bottom bg-no-repeat"
     style={{backgroundImage:`url('/about-wave-bg2.svg')`}}>
       <h1 className="text-2xl text-center mb-10">MY PROJECTS</h1>
       <div className="grid grid-cols-3 gap-5 justify-center items-center">
