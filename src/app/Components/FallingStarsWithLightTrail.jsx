@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef, useState } from "react";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaGithub } from "react-icons/fa";
