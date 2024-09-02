@@ -8,7 +8,7 @@ import { IoDocumentText } from "react-icons/io5";
 const FallingStarsWithLightTrail = () => {
   const canvasRef = useRef(null);
   const [typedText, setTypedText] = useState("");
-  const fullText = "FULLSTACK DEVELOPER"; 
+  const fullText = "FULLSTACK DEVELOPER";
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -108,23 +108,33 @@ const FallingStarsWithLightTrail = () => {
       <canvas
         ref={canvasRef}
         className="absolute inset-0"
-        style={{ backgroundColor: "#1f2937",width:'100%' }} // Dark gray background
+        style={{ backgroundColor: "#1f2937", width: "100%" }} // Dark gray background
       ></canvas>
       <div className="absolute mt-10 md:mt-0 w-full h-full top-0 flex flex-col justify-center items-center gap-10 z-10">
-        <h1 className="text-5xl md:text-8xl text-center text-white">Divyanjali Soni</h1>
+        <h1 className="text-5xl md:text-8xl text-center text-white">
+          Divyanjali Soni
+        </h1>
         <h3 className="text-2xl md:text-4xl text-white">{typedText}</h3>
         <div className="contacts flex gap-5">
           <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
-            <a href="#"><TiSocialLinkedin className="text-3xl text-white" /></a>
+            <a href="https://www.linkedin.com/in/divyanjali-soni-14aa6021b/">
+              <TiSocialLinkedin className="text-3xl text-white" />
+            </a>
           </div>
           <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
-           <a href="#"> <FaGithub className="text-3xl text-white" /></a>
+            <a href="https://github.com/diyasoni1510">
+              <FaGithub className="text-3xl text-white" />
+            </a>
           </div>
           <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
-            <a href="#"><BiLogoGmail className="text-3xl text-white" /></a>
+            <a href="mailto:sonidiya126@gmail.com">
+              <BiLogoGmail className="text-3xl text-white" />
+            </a>
           </div>
           <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
-            <a href="#"><IoDocumentText className="text-3xl text-white" /></a>
+            <a href="https://drive.google.com/file/d/1Xtjm26vPCep23YkC638J3xsNPBXmy-D6/view?usp=sharing">
+              <IoDocumentText className="text-3xl text-white" />
+            </a>
           </div>
         </div>
       </div>
