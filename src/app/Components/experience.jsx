@@ -2,7 +2,7 @@
 import React from "react";
 import { useEffect } from "react";
 
-const experience = () => {
+const Experience = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -85,4 +85,4 @@ const experience = () => {
   );
 };
 
-export default experience;
+export default Experience;
