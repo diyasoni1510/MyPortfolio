@@ -4,7 +4,7 @@ import { VscGithub } from "react-icons/vsc";
 
 const projectInfo = [
   {
-    name: "CHAT APP",
+    name: "SOCIAL MEDIA",
     image: "/social-media.jpg",
     codeLink: "https://github.com/diyasoni1510/Gupshup",
     desc: "Social Media: Nextjs social media web Application, user-friendly, real-time messaging, JWT-based security, ensuring responsiveness, prioritizing seamless communication.",
@@ -31,9 +31,9 @@ const projectInfo = [
 
 const myProjects = () => {
   return (
-    <div className="w-full py-20 flex flex-col gap-4 text-white px-5 md:px-20 bg-cover bg-bottom bg-no-repeat"
+    <div className="w-full py-10 flex flex-col gap-4 text-white px-5 md:px-20 bg-cover bg-bottom bg-no-repeat"
     style={{backgroundImage:`url('/about-wave-bg2.svg')`}}>
-      <h1 className="text-2xl text-center ">MY PROJECTS</h1>
+      <h1 className="text-2xl text-center mb-10">MY PROJECTS</h1>
       <div className="grid grid-cols-3 gap-5 justify-center items-center">
         {projectInfo.map((project, index) => {
           return (
@@ -41,8 +41,8 @@ const myProjects = () => {
               key={index}
               className="col-span-3 flex justify-center items-center"
             >
-              <div className=" w-2/3 max-h-[300px] flex gap-10 justify-center items-center bg-gradient-to-t from-white to-gray-700 text-black p-4">
-                <div className="relative max-h-[300px] ">
+              <div className=" md:w-2/3 md:max-h-[300px] grid grid-cols-3 gap-10 justify-center items-center bg-gradient-to-t from-white to-gray-700 text-black p-4">
+                <div className="col-span-3 md:col-span-1 relative max-h-[300px] ">
                   <img
                     src={project.image}
                     alt=""
@@ -54,7 +54,7 @@ const myProjects = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col gap-5">
+                <div className="col-span-3 md:col-span-2 flex flex-col gap-5">
                   <p>{project.desc}</p>
                   <Link
                     href={project.codeLink}

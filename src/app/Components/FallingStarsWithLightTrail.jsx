@@ -7,7 +7,7 @@ import { IoDocumentText } from "react-icons/io5";
 const FallingStarsWithLightTrail = () => {
   const canvasRef = useRef(null);
   const [typedText, setTypedText] = useState("");
-  const fullText = "FULLSTACK DEVELOPER"; // Text to display with typewriter effect
+  const fullText = "FULLSTACK DEVELOPER"; 
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -104,15 +104,15 @@ const FallingStarsWithLightTrail = () => {
   }, [fullText]);
 
   return (
-    <div className="relative w-full h-[95vh]">
+    <div className="relative w-full h-[98vh] md:h-[95vh]">
       <canvas
         ref={canvasRef}
         className="absolute inset-0"
         style={{ backgroundColor: "#1f2937",width:'100%' }} // Dark gray background
       ></canvas>
-      <div className="absolute w-full h-full top-0 flex flex-col justify-center items-center gap-10 z-10">
-        <h1 className="text-8xl text-center text-white">Divyanjali Soni</h1>
-        <h3 className="text-4xl text-white">{typedText}</h3>
+      <div className="absolute mt-10 md:mt-0 w-full h-full top-0 flex flex-col justify-center items-center gap-10 z-10">
+        <h1 className="text-5xl md:text-8xl text-center text-white">Divyanjali Soni</h1>
+        <h3 className="text-2xl md:text-4xl text-white">{typedText}</h3>
         <div className="contacts flex gap-5">
           <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
             <a href="#"><TiSocialLinkedin className="text-3xl text-white" /></a>

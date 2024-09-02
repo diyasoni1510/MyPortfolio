@@ -8,6 +8,7 @@ import Link from "next/link";
 import About from "./Components/about";
 import Divider from "./Components/divider";
 import Skills from "./Components/skills";
+import Footer from "./Components/Footer";
 import FallingStars from "./Components/FallingStars";
 import FallingStarsWithLight from "./Components/FallingStarsWithLight";
 import FallingStarsWithLightTrail from "./Components/FallingStarsWithLightTrail";
@@ -15,8 +16,6 @@ import MyProjects from "./Components/myProjects";
 import Experience from "./Components/experience";
 import Contact from "./Components/contact";
 
-import { FaSquareInstagram } from "react-icons/fa6";
-import { SiInstagram } from "react-icons/si";
 
 const Homepage = () => {
   return (
@@ -30,8 +29,9 @@ const Homepage = () => {
         <Skills/>
         <Divider />
         <MyProjects />
-        {/*<Divider />
-          <Contact /> */}
+        {/* <Divider /> */}
+        <Footer/>
+         {/* <Contact /> */}
       </div>
     </>
   );
