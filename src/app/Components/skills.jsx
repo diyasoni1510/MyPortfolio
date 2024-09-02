@@ -68,7 +68,7 @@ const skillsImages = [
   },
 ];
 
-const skills = () => {
+const Skills = () => {
   return (
     <div className="w-full py-10 md:py-20 flex flex-col gap-4 text-white px-5 md:px-20 justify-center items-center"
     >
@@ -130,4 +130,4 @@ const skills = () => {
   );
 };
 
-export default skills;
+export default Skills;
