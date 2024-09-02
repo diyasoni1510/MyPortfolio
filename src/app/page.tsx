@@ -14,7 +14,6 @@ import FallingStarsWithLight from "./Components/FallingStarsWithLight";
 import FallingStarsWithLightTrail from "./Components/FallingStarsWithLightTrail";
 import MyProjects from "./Components/myProjects";
 import Experience from "./Components/experience";
-import Contact from "./Components/Contact";
 
 
 const Homepage = () => {
@@ -29,9 +28,7 @@ const Homepage = () => {
         <Skills/>
         <Divider />
         <MyProjects />
-        {/* <Divider /> */}
         <Footer/>
-         {/* <Contact /> */}
       </div>
     </>
   );
