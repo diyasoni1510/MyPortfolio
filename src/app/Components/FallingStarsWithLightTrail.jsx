@@ -114,17 +114,17 @@ const FallingStarsWithLightTrail = () => {
         <h1 className="text-5xl md:text-8xl text-center text-white">Divyanjali Soni</h1>
         <h3 className="text-2xl md:text-4xl text-white">{typedText}</h3>
         <div className="contacts flex gap-5">
-          <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
-            <a href="#"><TiSocialLinkedin className="text-3xl text-white" /></a>
+          <div className="bg-black group hover:bg-white rounded-full p-2 hover:scale-105 transition-all">
+            <a href="#"><TiSocialLinkedin className="text-3xl text-white group-hover:text-black" /></a>
           </div>
-          <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
-           <a href="#"> <FaGithub className="text-3xl text-white" /></a>
+          <div className="bg-black group hover:bg-white rounded-full p-2 hover:scale-105 transition-all">
+           <a href="#"> <FaGithub className="text-3xl text-white group-hover:text-black" /></a>
           </div>
-          <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
-            <a href="#"><BiLogoGmail className="text-3xl text-white" /></a>
+          <div className="bg-black group hover:bg-white rounded-full p-2 hover:scale-105 transition-all">
+            <a href="#"><BiLogoGmail className="text-3xl text-white group-hover:text-black" /></a>
           </div>
-          <div className="bg-black rounded-full p-2 hover:scale-125 transition-all">
-            <a href="#"><IoDocumentText className="text-3xl text-white" /></a>
+          <div className="bg-black group hover:bg-white rounded-full p-2 hover:scale-105 transition-all">
+            <a href="#"><IoDocumentText className="text-3xl text-white group-hover:text-black" /></a>
           </div>
         </div>
       </div>

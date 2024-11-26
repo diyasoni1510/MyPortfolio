@@ -19,14 +19,14 @@ import Experience from "./Components/experience";
 const Homepage = () => {
   return (
     <>
-      <div className="bg-gray-800">
+      <div>
         <FallingStarsWithLightTrail />
         <About />
         {/* <Divider /> */}
         <Experience />
-        <Divider />
+        {/* <Divider /> */}
         <Skills/>
-        <Divider />
+        {/* <Divider /> */}
         <MyProjects />
         <Footer/>
       </div>

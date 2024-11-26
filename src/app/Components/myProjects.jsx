@@ -10,6 +10,12 @@ const projectInfo = [
     desc: "Social Media: Nextjs social media web Application, user-friendly, real-time messaging, JWT-based security, ensuring responsiveness, prioritizing seamless communication.",
   },
   {
+    name: "PWA | EXPENSO",
+    image: "/expense-tracker.jpg",
+    codeLink: "https://github.com/diyasoni1510/Expenso",
+    desc: "Progressive Web App: A Next.js-based progressive web app for expense tracking offers a seamless mobile experience, allowing users to manage finances, track expenses in real-time, and access data, just like a native mobile app.",
+  },
+  {
     name: "GUPSHUP",
     image: "/chat-app.jpg",
     codeLink: "https://github.com/diyasoni1510/Gupshup",
@@ -20,13 +26,7 @@ const projectInfo = [
     image: "/e-learning.jpg",
     codeLink: "https://github.com/diyasoni1510/Educo",
     desc: "Educo: Dynamic e-learning site, revolutionizing education. Seamless, interactive, user-friendly platform for learners of all ages and backgrounds.",
-  },
-  {
-    name: "AMAKART",
-    image: "/e-commerce.jpg",
-    codeLink: "https://github.com/diyasoni1510/Amakart",
-    desc: "Implemented e-commerce features: shopping cart, order processing, and inventory management, enhancing functionality for effective online retail.",
-  },
+  }
 ];
 
 const MyProjects = () => {
