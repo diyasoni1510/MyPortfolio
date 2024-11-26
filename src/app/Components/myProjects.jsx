@@ -6,8 +6,8 @@ const projectInfo = [
   {
     name: "SOCIAL MEDIA",
     image: "/social-media.jpg",
-    codeLink: "https://github.com/diyasoni1510/Gupshup",
-    desc: "Social Media: Nextjs social media web Application, user-friendly, real-time messaging, JWT-based security, ensuring responsiveness, prioritizing seamless communication.",
+    codeLink: "https://github.com/diyasoni1510/chaos",
+    desc: "Chaos: Nextjs social media web Application, user-friendly, real-time messaging, JWT-based security, ensuring responsiveness, prioritizing seamless communication.",
   },
   {
     name: "PWA | EXPENSO",
@@ -31,8 +31,10 @@ const projectInfo = [
 
 const MyProjects = () => {
   return (
-    <div className="w-full py-10 md:py-20 flex flex-col gap-4 text-white px-5 md:px-20 bg-cover bg-bottom bg-no-repeat"
-    style={{backgroundImage:`url('/about-wave-bg2.svg')`}}>
+    <div
+      className="w-full py-10 md:py-20 flex flex-col gap-4 text-white px-5 md:px-20 bg-cover bg-bottom bg-no-repeat"
+      style={{ backgroundImage: `url('/about-wave-bg2.svg')` }}
+    >
       <h1 className="text-2xl text-center mb-10">MY PROJECTS</h1>
       <div className="grid grid-cols-3 gap-5 justify-center items-center">
         {projectInfo.map((project, index) => {
@@ -56,6 +58,7 @@ const MyProjects = () => {
                 </div>
                 <div className="col-span-3 md:col-span-2 flex flex-col gap-5">
                   <p>{project.desc}</p>
+
                   <Link
                     href={project.codeLink}
                     className="link-button text-sm bg-gray-800 text-black w-full text-center rounded py-2 flex gap-2 justify-center items-center"
@@ -63,6 +66,15 @@ const MyProjects = () => {
                     <VscGithub />
                     Go To Code
                   </Link>
+                  {project.name === "SOCIAL MEDIA" && (
+                    <Link
+                      href="https://chaos-v2.vercel.app/"
+                      className="link-button text-sm bg-gray-800 text-black w-full text-center rounded py-2 flex gap-2 justify-center items-center"
+                    >
+                      {/* <VscGithub /> */}
+                      View Project
+                    </Link>
+                  )}
                 </div>
               </div>
             </div>
